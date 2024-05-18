@@ -1,6 +1,6 @@
 # VirusTotal API Interaction Script
 
-This project consists of several Python scripts designed to interact with the VirusTotal API, allowing users to query the service for information about files or URLs related to potential malware or security threats.
+A malware scanner program that obtains the file or hash of the file and returns the VirusTotal scan result directly to your terminal.
 
 ## Overview
 
