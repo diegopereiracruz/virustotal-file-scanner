@@ -32,7 +32,7 @@ mkdir ~/vt_api_files
 nano ~/vt_api_files/vt_api_key.txt
 ```
 
-Just paste the key to the file and save.
+Just paste the API KEY to the file and save.
 
 To run the main script, execute:
 
