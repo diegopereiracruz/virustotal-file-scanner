@@ -25,7 +25,14 @@ cd virustotal-file-scanner
 
 ## Usage
 
-Before running any script, ensure you have obtained a VirusTotal API key and saved it in the `vt_api_files/vt_api_key.txt` file.
+Before running any script, ensure you have obtained a VirusTotal API key and saved it in the `~/vt_api_files/vt_api_key.txt` file. Create the folder in your home directory if you haven't run the script yet.
+
+```bash
+mkdir ~/vt_api_files
+nano ~/vt_api_files/vt_api_key.txt
+```
+
+Just paste the key to the file and save.
 
 To run the main script, execute:
 
@@ -33,8 +40,24 @@ To run the main script, execute:
 python3 virustotal.py <md5sum_hash or file_path>
 ```
 
-
 Replace `<md5sum_hash or file_path>` with the MD5 hash or file path you wish to analyze.
+
+###### Usage examples
+```bash
+python3 virustotal.py f4c3fa43b5bdfaa0205990d25ce51c5a
+```
+or
+```bash
+python3 virustotal.py path/to/file.ext
+```
+
+## Alias
+```bash
+vc() {
+    python3 path/to/virustotal.py $1
+}
+```
+vc = virus checker
 
 ## Contributing
 
